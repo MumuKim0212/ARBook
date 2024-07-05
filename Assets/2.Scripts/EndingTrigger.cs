@@ -7,12 +7,12 @@ public class EndingTrigger : MonoBehaviour
 {
     void Start()
     {
+        SceneManager.LoadScene("Ending");
         gameObject.SetActive(false);
     }
 
     private void OnDisabled()
     {
-        SceneManager.LoadScene("Ending");
 
     }
 }

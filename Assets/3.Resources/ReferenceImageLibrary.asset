@@ -53,7 +53,7 @@ MonoBehaviour:
     m_SerializedTextureGuid:
       m_GuidLow: 5117431300465323471
       m_GuidHigh: 16403241614617537243
-    m_Size: {x: 0.5, y: 0.5}
+    m_Size: {x: 0.2, y: 0.2}
     m_SpecifySize: 1
     m_Name: ParkPanel
     m_Texture: {fileID: 0}
@@ -63,7 +63,7 @@ MonoBehaviour:
     m_SerializedTextureGuid:
       m_GuidLow: 2987059018910283218
       m_GuidHigh: 7072833040978407032
-    m_Size: {x: 0.5, y: 0.5}
+    m_Size: {x: 0.2, y: 0.2}
     m_SpecifySize: 1
     m_Name: BonusPanel
     m_Texture: {fileID: 0}
