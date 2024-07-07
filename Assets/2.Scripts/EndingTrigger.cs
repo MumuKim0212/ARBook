@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class EndingTrigger : MonoBehaviour
 {
-    void Start()
+    public void GoEnding()
     {
         SceneManager.LoadScene("Ending");
         gameObject.SetActive(false);
