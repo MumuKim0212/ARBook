@@ -16,6 +16,7 @@ public class ChatTextController : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             timming++;
+            StopAllCoroutines();
             if (timming < introDialogues.Length)
                 StartCoroutine(NormalChat(introDialogues[timming]));
             else
@@ -42,7 +43,7 @@ public class ChatTextController : MonoBehaviour
             GameManager.Instance.audioSource.PlayOneShot(textAudioClip);
             writerText += narration[a];
             ChatText.text = writerText;
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.08f);
         }
     }
 }

@@ -11,15 +11,15 @@ public class UIManager : MonoBehaviour
     [SerializeField] private ChatTextController chatTextController;
     public AudioClip UIAudioClip;
 
+    private void Awake()
+    {
+        if (GameManager.Instance.isEnding != 0)
+            startScreenPanel.gameObject.SetActive(false);
+    }
     public void ShowStartScreen()
     {
-        if(GameManager.Instance.isEnding == 0)
-        {
         StartCoroutine(BounceAnimation(gameTitleText, 1f));
         StartCoroutine(BounceAnimation(gamestartText, 2f));
-        }
-        else
-            startScreenPanel.gameObject.SetActive(false);
     }
     IEnumerator BounceAnimation(UIBounceInEffect bounceObject, float time)
     {
